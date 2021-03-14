@@ -7,7 +7,6 @@ public class MyTest extends BaseTest {
     @Test
     public void test() throws InterruptedException {
         app.login.login(validUser);
-        Thread.sleep(2000);
         Assert.assertEquals(app.dashboard.getMailUser(), validUser.email);
         app.common.takeScreenshot();
 
